@@ -84,4 +84,4 @@ chmod +x deploy_v2.sh
 **Developed by:** Jexko-1Bit  
 **Date:** 16 April 2026
 
-> **Disclosure:** In compliance with Section 4 of the MyAI Future Hackathon rules, this project's development, including orchestration and workflows, was fully assisted by AI (Google Antigravity & Gemini). Research and documentation were generated using Google NotebookLM.
+> **Disclosure:** In compliance with Section 4 of the MyAI Future Hackathon rules, this project's development, including orchestration and workflows, was fully assisted by AI (Google Antigravity & Gemini). Documentation were generated using Google NotebookLM.
