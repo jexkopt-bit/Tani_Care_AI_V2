@@ -4,6 +4,7 @@ import os
 import urllib.request
 import tempfile
 import base64
+import requests
 from genkit.core import genkit
 from genkit.plugins.vertex_ai import vertexai
 from google.cloud import discoveryengine_v1 as discoveryengine
@@ -30,6 +31,34 @@ class AnalysisRequest(BaseModel):
 
 class AnalysisResponse(BaseModel):
     result: str
+
+STATE_COORDINATES = {
+    "johor": {"lat": 1.55, "lon": 103.75},
+    "kedah": {"lat": 6.00, "lon": 100.50},
+    "perak": {"lat": 4.80, "lon": 101.00},
+    "selangor": {"lat": 3.00, "lon": 101.50},
+    "pahang": {"lat": 3.50, "lon": 102.80},
+    "kelantan": {"lat": 6.12, "lon": 102.25},
+    "terengganu": {"lat": 5.33, "lon": 103.14},
+    "pulau pinang": {"lat": 5.41, "lon": 100.33},
+    "melaka": {"lat": 2.18, "lon": 102.25},
+}
+
+@ai.tool(
+    name="get_weather",
+    description="Memeriksa cuaca semasa (suhu, kelembapan) untuk sebuah negeri di Malaysia",
+)
+def get_weather(state: str) -> str:
+    coords = STATE_COORDINATES.get(state.lower(), STATE_COORDINATES["johor"])
+    weather_url = f"https://api.open-meteo.com/v1/forecast?latitude={coords['lat']}&longitude={coords['lon']}&current=temperature_2m,relative_humidity_2m,precipitation&timezone=Asia/Kuala_Lumpur"
+    try:
+        weather = requests.get(weather_url, timeout=5).json()['current']
+        temp = weather.get('temperature_2m', 28)
+        humidity = weather.get('relative_humidity_2m', 82)
+        precip = weather.get('precipitation', 0)
+        return f"Cuaca terkini di {state}: {temp}°C, Kelembapan {humidity}%, Hujan {precip}mm."
+    except Exception as e:
+        return f"Gagal mendapatkan data cuaca. Sila bergantung kepada maklumat visual sahaja."
 
 async def search_rag_documents(query: str) -> str:
     """Retrieves relevant treatment guidelines from Vertex AI Search (Data Store)."""
@@ -116,6 +145,7 @@ async def analyze_crop_flow(crop_type: str, state: str, image_bytes: bytes) -> s
     response = await ai.generate(
         prompt=prompt,
         images=[image_bytes],
+        tools=[get_weather],
     )
     
     return response.text

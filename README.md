@@ -1,5 +1,9 @@
 # TaniCare AI – Kawan Petani, Penjaga Tanaman
 
+![TaniCare AI Banner](assets/banner.jpeg)
+
+![Fully Assisted by AI](https://img.shields.io/badge/Status-Fully%20Assisted%20by%20AI-blueviolet?style=for-the-badge) ![NotebookLM](https://img.shields.io/badge/Generated%20by-NotebookLM-blue?style=for-the-badge&logo=google)
+
 **Team:** Jexko-1Bit  
 **Hackathon:** MyAI Future Hackathon 2026  
 **Track:** Track 1 – Padi & Plates (Agrotech & Food Security)
@@ -79,3 +83,5 @@ chmod +x deploy_v2.sh
 ---
 **Developed by:** Jexko-1Bit  
 **Date:** 16 April 2026
+
+> **Disclosure:** In compliance with Section 4 of the MyAI Future Hackathon rules, this project's development, including orchestration and workflows, was fully assisted by AI (Google Antigravity & Gemini). Research and documentation were generated using Google NotebookLM.
