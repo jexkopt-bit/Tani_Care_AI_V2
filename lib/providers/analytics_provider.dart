@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../earth_engine_service.dart';
+import 'state_provider.dart';
 
 class AnalyticsState {
   final Map<String, dynamic> current;
@@ -11,9 +12,9 @@ class AnalyticsState {
   List<String> get dates => (history['dates'] as List?)?.cast<String>() ?? [];
   List<double> get ndviList => (history['ndvi'] as List?)?.cast<double>() ?? [];
   List<double> get eviList => (history['evi'] as List?)?.cast<double>() ?? [];
-  String get weather => current['weather'] ?? "Cuaca tidak tersedia";
-  String get ndviCurrent => current['ndvi']?.toString() ?? "0.00";
-  String get eviCurrent => current['evi']?.toString() ?? "0.00";
+  String get weather => current['weather'] ?? 'Cuaca tidak tersedia';
+  String get ndviCurrent => current['ndvi']?.toString() ?? '0.00';
+  String get eviCurrent => current['evi']?.toString() ?? '0.00';
 }
 
 class AnalyticsNotifier extends AsyncNotifier<AnalyticsState> {
@@ -21,38 +22,54 @@ class AnalyticsNotifier extends AsyncNotifier<AnalyticsState> {
 
   @override
   Future<AnalyticsState> build() async {
-    return _fetchAndSave("Johor", "Padi");
+    // ✅ Read from shared state provider (no longer hardcoded 'Johor'/'Padi')
+    final state = ref.watch(selectedStateProvider);
+    final crop = ref.watch(selectedCropProvider);
+    return _fetchAndSave(state, crop);
   }
 
-  Future<AnalyticsState> refresh(String state, String crop) async {
+  /// Refresh analytics for a specific state + crop combination.
+  Future<void> refresh(String state, String crop) async {
+    // Update both shared providers so all screens stay in sync
+    ref.read(selectedStateProvider.notifier).state = state;
+    ref.read(selectedCropProvider.notifier).state = crop;
     final data = await _fetchAndSave(state, crop);
-    return data;
+    state_ref(data);
+  }
+
+  // ignore: non_constant_identifier_names
+  void state_ref(AnalyticsState data) {
+    state = AsyncValue.data(data);
   }
 
   Future<AnalyticsState> _fetchAndSave(String state, String crop) async {
-    // Fetch from Earth Engine + Weather
-    final rawData = await EarthEngineService.getAnalytics(state: state, crop: crop);
+    final rawData =
+        await EarthEngineService.getAnalytics(state: state, crop: crop);
 
     final analyticsState = AnalyticsState(
       current: rawData['current'] ?? {},
       history: rawData['history'] ?? {},
     );
 
-    // Save to Firestore (GCP)
-    await _db.collection('analytics').doc('${state}_${crop}_${DateTime.now().millisecondsSinceEpoch}').set({
+    // Persist to Firestore with state field included
+    await _db
+        .collection('analytics')
+        .doc('${state}_${crop}_${DateTime.now().millisecondsSinceEpoch}')
+        .set({
       'state': state,
       'crop': crop,
       'timestamp': FieldValue.serverTimestamp(),
-      'ndvi': rawData['current']['ndvi'],
-      'evi': rawData['current']['evi'],
-      'weather': rawData['current']['weather'],
-      'message': rawData['current']['message'],
+      'ndvi': rawData['current']?['ndvi'],
+      'evi': rawData['current']?['evi'],
+      'weather': rawData['current']?['weather'],
+      'message': rawData['current']?['message'],
     });
 
     return analyticsState;
   }
 }
 
-final analyticsProvider = AsyncNotifierProvider<AnalyticsNotifier, AnalyticsState>(
+final analyticsProvider =
+    AsyncNotifierProvider<AnalyticsNotifier, AnalyticsState>(
   () => AnalyticsNotifier(),
 );

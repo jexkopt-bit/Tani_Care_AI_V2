@@ -1,0 +1,72 @@
+RINGKASAN AKTA RACUN MAKHLUK PEROSAK 1974 (PESTICIDES ACT 1974)
+UNTUK RUJUKAN SISTEM TaniCare AI
+Sumber: Lembaga Racun Makhluk Perosak Malaysia (MPB) & Jabatan Pertanian Malaysia
+
+=============================================================================
+TUJUAN AKTA
+=============================================================================
+Akta ini mengawal selia pendaftaran, pemasaran, penggunaan, dan penyimpanan
+racun perosak di Malaysia bagi melindungi kesihatan awam, alam sekitar, dan
+keselamatan pengguna makanan.
+
+=============================================================================
+SENARAI RACUN FUNGISIDA BERDAFTAR (PILIHAN UTAMA)
+=============================================================================
+Nama Aktif          | Kegunaaan              | Tempoh PHI (hari)
+--------------------|------------------------|------------------
+Mancozeb 75% WP     | Kulat daun, blas       | 7
+Carbendazim 50% WP  | Antraknos, blas        | 14
+Propiconazole 25%EC | Blas, hawar pelepah    | 28
+Tebuconazole 25% EC | Karat, hawar           | 21
+Thiophanate-methyl  | Kulat am               | 14
+Copper hydroxide    | Bakteria, kulat        | 7
+
+=============================================================================
+SENARAI RACUN INSEKTISIDA BERDAFTAR (PILIHAN UTAMA)
+=============================================================================
+Nama Aktif              | Kegunaaan               | Tempoh PHI (hari)
+------------------------|-------------------------|------------------
+Chlorpyrifos 20% EC     | Perosak am, tanah       | 21
+Imidacloprid 70% WG     | Wereng, afid            | 21
+Lambda-cyhalothrin 5%EC | Ulat, kumbang, wereng   | 7
+Abamectin 1.8% EC       | Hama, ulat daun         | 7
+Cypermethrin 10% EC     | Perosak am              | 7
+Fipronil 5% SC          | Perosak tanah, rayap    | 30
+Deltamethrin 2.5% EC    | Perosak am              | 7
+
+=============================================================================
+SENARAI RACUN HERBISIDA BERDAFTAR
+=============================================================================
+Nama Aktif          | Kegunaaan              | Tempoh PHI (hari)
+--------------------|------------------------|------------------
+Glyphosate 41% SL   | Rumpai am (pra-tanam)  | 7
+Paraquat 20% SL     | Rumpai am (pra-tanam)  | 14
+Butachlor 5% GR     | Rumpai padi (pasca)    | -
+2,4-D 72% SL        | Rumpai berdaun lebar   | 21
+
+=============================================================================
+RACUN BIOLOGI / BIOPESTISIDA (SELAMAT UNTUK IPM)
+=============================================================================
+- Trichoderma harzianum    — Biofungisida tanah
+- Bacillus thuringiensis   — Bioinsektisida (Bt) untuk ulat
+- Beauveria bassiana       — Kulat entomopataogen
+- Neem extract (Azadirachtin) — Tolak serangga
+- Spinosad                 — Bioinsektisida berspektrum luas
+- Pyrethrin                — Insektisida semula jadi
+
+=============================================================================
+LARANGAN DAN PERATURAN PENTING
+=============================================================================
+1. DILARANG menggunakan racun tidak berdaftar — denda RM 500,000 / penjara 5 tahun
+2. WAJIB ikut label — elak lebihan dos yang boleh menjejaskan residU makanan
+3. PHI (Pre-Harvest Interval) MESTI dipatuhi sebelum menuai
+4. Pakai perlatan pelindung diri (PPE) semasa menggunakan racun
+5. Buang bekas racun mengikut prosedur pelupusan selamat
+
+=============================================================================
+HUBUNGI UNTUK SEMAKAN TERKINI
+=============================================================================
+Lembaga Racun Makhluk Perosak Malaysia (MPB)
+Tel: 03-8870 1000
+Laman web: www.mpb.gov.my
+Jabatan Pertanian Malaysia: www.doa.gov.my

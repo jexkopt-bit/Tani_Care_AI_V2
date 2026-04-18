@@ -1,0 +1,75 @@
+PANDUAN PENYAKIT DAN RAWATAN TANAMAN PADI (ORYZA SATIVA) DI MALAYSIA
+Sumber: Jabatan Pertanian Malaysia (DoA) & Institut Penyelidikan dan Kemajuan Pertanian Malaysia (MARDI)
+
+=============================================================================
+1. PENYAKIT BLAS (RICE BLAST) — Magnaporthe oryzae
+=============================================================================
+Gejala: Bintik berlian pada daun, warna kelabu-putih dengan sempadan perang kecoklatan. Boleh menyerang leher rumpai menyebabkan "neck rot". Keterukan: Tinggi.
+
+Rawatan Kimia (Berdaftar Akta Racun 1974):
+- Tricyclazole 75% WP: 0.5 kg/ha, renjis pada gejala awal
+- Propiconazole 25% EC: 0.5 L/ha, selang 14 hari
+- Carbendazim 50% WP: 1.0 kg/ha
+
+Rawatan Organik / IPM:
+- Aplikasi Trichoderma harzianum sebagai biofungisida
+- Elak lebihan nitrogen; guna baja kawalan pelepasan
+- Tanaman varieti tahan: MR219, MR263, MR284
+
+Pencegahan MyGAP:
+- Pastikan sistem pengairan tidak terlalu lembap
+- Buang sisa tanaman selepas tuai
+- Pantau kelembapan > 90% sebagai penanda amaran
+
+=============================================================================
+2. PENYAKIT HAWAR PELEPAH (SHEATH BLIGHT) — Rhizoctonia solani
+=============================================================================
+Gejala: Lesi berwarna kelabu-putih pada pelepah padi, bersempadan coklat gelap. Merebak kepada daun dan leher malai dalam cuaca lembap.
+
+Rawatan Kimia (Berdaftar Akta 1974):
+- Validamycin 3% L: 1.5 L/ha
+- Propiconazole 25% EC: 0.5 L/ha
+- Hexaconazole 5% SC: 1.0 L/ha
+
+Rawatan Organik / IPM:
+- Trichoderma viride: 5 kg/ha sebelum tanam
+- Kurangkan kepadatan tanaman
+- Elak pengairan berlebihan
+
+Pencegahan MyGAP:
+- Guna biji benih bertauliah DOA
+- Rendam benih dalam air panas (52°C, 10 minit) sebelum semai
+
+=============================================================================
+3. PENYAKIT DAUN KUNING (TUNGRO VIRUS) — Rice Tungro Disease
+=============================================================================
+Gejala: Daun menguning bermula dari hujung, tumbesaran terencam, hasil berkurangan sehingga 100% jika sebaran awal.
+
+Vektor: Wereng hijau (Nephotettix virescens)
+
+Kawalan:
+- Kawalan vektor wereng dengan Imidacloprid 70% WG: 70 g/ha
+- Lambda-cyhalothrin 5% EC: 0.5 L/ha untuk wereng
+- Tanam varieti tahan tungro: MR232, MR253
+
+Pencegahan:
+- Elak tanam serempak dengan sawah berjangkit
+- Pantau populasi wereng secara berkala
+
+=============================================================================
+4. PENYAKIT BINTIK PERANG (BROWN SPOT) — Helminthosporium oryzae
+=============================================================================
+Gejala: Bintik bulat atau bujur berwarna perang pada daun, biasanya muncul apabila pokok kekurangan nutrien.
+
+Rawatan:
+- Mancozeb 75% WP: 2-3 kg/ha
+- Carbendazim 50% WP: 1.0 kg/ha
+- Tambah baja Kalium (K) untuk tingkatkan rintangan
+
+=============================================================================
+MAKLUMAT UNDANG-UNDANG PENTING
+=============================================================================
+- Semua racun perosak MESTI berdaftar di bawah Akta Racun Makhluk Perosak 1974
+- Pendaftaran diuruskan oleh Lembaga Racun Makhluk Perosak Malaysia (MPB)
+- Hubungi 03-8870 1000 (JOA) untuk senarai racun berdaftar terkini
+- Pelanggaran: Denda sehingga RM 500,000 atau penjara 5 tahun

@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@google/adk": "^0.6.1"
+    "@genkit-ai/google-genai": "^1.32.0",
+    "@google/adk": "^0.6.1",
+    "genkit": "^1.32.0"
   }
 }

@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class EarthEngineService {
-  static const String _functionUrl = "https://earth-engine-alerts-asia-southeast1-tanicare-ai-2026.cloudfunctions.net/earth-engine-alerts";
+  static const String _functionUrl = "https://us-central1-tani-care-ai.cloudfunctions.net/get-earth-engine-alerts";
 
   static Future<Map<String, dynamic>> getAnalytics({
     required String state,

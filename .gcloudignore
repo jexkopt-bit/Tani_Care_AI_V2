@@ -1,0 +1,21 @@
+# .gcloudignore optimized
+.git
+.gitignore
+node_modules
+.dart_tool
+
+# Ignore huge build folders
+build/app
+build/android
+build/ios
+build/macos
+build/windows
+build/linux
+build/web_assets
+build/ot
+
+# Keep these
+!build/web
+!build/web/**
+!Dockerfile
+!nginx.conf
